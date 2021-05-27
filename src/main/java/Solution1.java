@@ -21,13 +21,14 @@ class Solution1 {
         twoSum(nums,18);
 
     }
-    private static int[] twoSum(int[] nums, int target) {
+    private static void twoSum(int[] nums, int target) {
         Map<Integer,Integer> map=new HashMap<>();
         for (int i = 0; i < nums.length; i++) {
             int temp=target-nums[i];
             if(map.containsKey(temp)){
                 System.out.println(map.get(temp)+","+i);
-                return new int[] {map.get(temp),i};
+                map.get(temp);
+                return;
             }
             map.put(nums[i],i);
         }
