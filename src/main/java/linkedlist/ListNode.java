@@ -1,9 +1,11 @@
+package linkedlist;
+
 /**
  * Definition for singly-linked list.
- * public class ListNode {
+ * public class linkedlist.ListNode {
  * int val;
- * ListNode next;
- * ListNode(int x) { val = x; }
+ * linkedlist.ListNode next;
+ * linkedlist.ListNode(int x) { val = x; }
  * }
  * @author max
  */
