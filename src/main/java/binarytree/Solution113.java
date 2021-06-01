@@ -61,7 +61,7 @@ class Solution113 {
         path.add(root.val);
         targetSum-=root.val;
         if(targetSum == 0 && root.left == null && root.right == null){
-            res.add(path);
+            res.add(new ArrayList(path));
         }
         getRes(root.left,targetSum);
         getRes(root.right,targetSum);
