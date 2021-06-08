@@ -33,6 +33,8 @@ package array;
 // 
 // Related Topics 数组 双指针
 
+import java.util.Arrays;
+
 class Solution88 {
     public static void main(String[] args) {
         int[] nums1={1,2,3,0,0,0},nums2={2,5,6};
@@ -58,5 +60,6 @@ class Solution88 {
         for (int i = 0; i < m + n; i++) {
             nums1[i]=sort[i];
         }
+        System.out.println(Arrays.toString(nums1));
     }
 }
