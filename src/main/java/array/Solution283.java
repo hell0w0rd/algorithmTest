@@ -19,10 +19,11 @@ import java.util.Arrays;
 
 class Solution283 {
     public static void main(String[] args) {
-        int[] nums = {4,1,0,3,12};
+        int[] nums = {1,0,0,3,12};
         moveZeroes1(nums);
+        moveZeroes(nums);
     }
-    public void moveZeroes(int[] nums) {
+    public static void moveZeroes(int[] nums) {
         int left = 0, right = 0;
         while( right < nums.length){
             if(nums[right] != 0){
@@ -33,6 +34,7 @@ class Solution283 {
             }
             right++;
         }
+        System.out.println(Arrays.toString(nums));
     }
     public static void moveZeroes1(int[] nums) {
         int left = 0;
