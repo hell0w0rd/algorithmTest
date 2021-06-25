@@ -44,4 +44,13 @@ class Solution977 {
         Arrays.sort(nums);
         return nums;
     }
+    public static int[] sortedSquares2(int[] nums) {
+        int left = 0,right = nums.length-1;
+        while (left < right){
+            if(nums[left]*nums[left] > nums[right]*nums[right]){
+
+            }
+        }
+        return nums;
+    }
 }
