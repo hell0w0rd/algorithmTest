@@ -50,8 +50,8 @@ import java.util.List;
 
 class Solution989 {
     public static void main(String[] args) {
-        int[] num = {1,2,0,0};
-        int k = 34;
+        int[] num = {2,7,4};
+        int k = 181;
         System.out.println(addToArrayForm(num,k));
     }
     public static List<Integer> addToArrayForm(int[] num, int k) {
@@ -60,7 +60,7 @@ class Solution989 {
         for (int i = 0; i < num.length; i++) {
             str.append(num[i]);
         }
-        Integer sum  = Integer.parseInt(String.valueOf(str)) + k;
+        Long sum  = Long.parseLong(String.valueOf(str)) + k;
         System.out.println(String.valueOf(str));
         System.out.println(sum);
         for (int i = 0; i < sum.toString().length(); i++) {
